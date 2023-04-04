@@ -2,10 +2,7 @@
 import './App.css';
 import { Box, Grid, Paper, styled } from "@mui/material";
 import { useState } from "react";
-import GetCountries from './crud/getCountry';
-import AddCountry from './crud/addCountry';
-import UpdateCountry from './crud/updateCountry';
-import DeleteCountry from './crud/deletCountry';
+import GetCountries from './crud/GetCountries';
 // import './App.css'
 
 export default function App() {
@@ -34,24 +31,6 @@ export default function App() {
           <Grid xs={3}>
             <Item>
               <GetCountries />
-            </Item>
-          </Grid>
-
-          <Grid xs={3}>
-            <Item>
-              <AddCountry />
-            </Item>
-          </Grid>
-
-          <Grid xs={3}>
-            <Item>
-              <UpdateCountry />
-            </Item>
-          </Grid>
-
-          <Grid xs={3}>
-            <Item>
-              <DeleteCountry />
             </Item>
           </Grid>
         </Grid>
