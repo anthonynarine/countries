@@ -3,6 +3,7 @@ import './App.css';
 import { Box, Grid, Paper, styled } from "@mui/material";
 import { useState } from "react";
 import GetCountries from './crud/GetCountries';
+import AddCountry from './crud/AddCountry';
 // import './App.css'
 
 export default function App() {
@@ -31,6 +32,11 @@ export default function App() {
           <Grid xs={3}>
             <Item>
               <GetCountries />
+            </Item>
+          </Grid>
+          <Grid xs={3}>
+            <Item>
+              <AddCountry />
             </Item>
           </Grid>
         </Grid>

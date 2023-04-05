@@ -1,5 +1,6 @@
 import { React, useState, useEffect } from "react";
 import axios from "axios";
+import { Grid, Typography } from "@mui/material";
 
 function GetCountries(){ 
 
@@ -21,11 +22,14 @@ function GetCountries(){
 
   return (
     <div>
+      <Typography color="black" variant="h6" >Countries List</Typography>
       {countries && countries.map((country)=>{
         return(
-          <>
-          {country.name}
-          </>
+          <Grid container sx={{padding: 1}} justifyContent="center" key={country.id}>
+            <Grid item alignItems="center">          
+            {country.name} 
+            </Grid>
+          </Grid>
           
         )
       })}
